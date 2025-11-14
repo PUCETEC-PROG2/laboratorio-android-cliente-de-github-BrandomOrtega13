@@ -1,7 +1,7 @@
 # Laboratorio Android. Cliente de GitHub
 
 # Datos estudiante:
-Nombre: ARMANDO XAVIER ESTEVEZ TOAPANTA
+Nombre: ORTEGA BERMUDEZ BRANDOM ARIEL 
 Carrera: DESARROLLO DE SOFTWARE
 
 ## Descripción del Proyecto
