@@ -9,21 +9,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp"
-        >
+        android:padding="16dp">
 
+        <!-- Avatar -->
         <ImageView
             android:id="@+id/repo_owner_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_launcher_foreground"
             android:layout_gravity="center"
-            android:contentDescription="@string/image_descripcion"
-            />
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/image_descripcion" />
 
+        <!-- Columna de textos -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -34,19 +35,16 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/repo_name"
-                    android:textStyle="bold"
                     android:padding="8dp"
-                    />
+                    android:text="@string/repo_name"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/repo_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/test_text"
                     android:padding="8dp"
-
-                    />
+                    android:text="@string/test_text" />
             </LinearLayout>
 
             <LinearLayout
@@ -57,18 +55,16 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/repo_descripcion"
-                    android:textStyle="bold"
                     android:padding="8dp"
-                    />
+                    android:text="@string/repo_descripcion"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/repo_descripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/test_text"
                     android:padding="8dp"
-                    />
+                    android:text="@string/test_text" />
             </LinearLayout>
 
             <LinearLayout
@@ -79,20 +75,43 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/repo_lang"
-                    android:textStyle="bold"
                     android:padding="8dp"
-                    />
+                    android:text="@string/repo_lang"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/repo_lang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/test_text"
                     android:padding="8dp"
-                    />
+                    android:text="@string/test_text" />
             </LinearLayout>
         </LinearLayout>
+
+        <!-- Columna de botones editar / eliminar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/edit_repo_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_edit"
+                android:contentDescription="@string/edit" />
+
+            <ImageButton
+                android:id="@+id/delete_repo_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="@string/delete" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </FrameLayout>

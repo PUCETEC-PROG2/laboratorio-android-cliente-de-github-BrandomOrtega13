@@ -7,4 +7,6 @@
     <string name="test_text">Texto de prueba</string>
     <string name="save">Guardar</string>
     <string name="cancel">Cancelar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
 </resources>
